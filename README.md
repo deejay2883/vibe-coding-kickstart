@@ -2,9 +2,9 @@
 
 **From idea to build-ready, one question at a time.**
 
-A Claude skill that asks adaptive business and technical questions, from idea and MVP to build, regression testing, and release, then creates an actionable handoff.
+A reusable workflow for Claude and Codex that asks adaptive business and technical questions, from idea and MVP to build, regression testing, and release, then creates an actionable handoff.
 
-[Download the Claude skill ZIP](https://github.com/deejay2883/vibe-coding-kickstart/raw/refs/heads/main/dist/vibe-coding-kickstart-claude.zip) ? [Read the skill](skills/vibe-coding-kickstart/SKILL.md) ? [Report feedback](https://github.com/deejay2883/vibe-coding-kickstart/issues)
+[Download the Claude skill ZIP](https://github.com/deejay2883/vibe-coding-kickstart/raw/refs/heads/main/dist/vibe-coding-kickstart-claude.zip) ? [Download the Codex plugin ZIP](https://github.com/deejay2883/vibe-coding-kickstart/raw/refs/heads/main/dist/vibe-coding-kickstart-codex-plugin.zip) ? [Read the skill](skills/vibe-coding-kickstart/SKILL.md) ? [Report feedback](https://github.com/deejay2883/vibe-coding-kickstart/issues)
 
 ## Start with your idea
 
@@ -17,6 +17,17 @@ It also works on existing projects:
 > We changed user permissions. Interview me about regression testing and prepare a test plan.
 
 ## Install
+
+### Codex plugin
+
+```text
+codex plugin marketplace add deejay2883/vibe-coding-kickstart --ref main
+codex plugin add vibe-coding-kickstart@vibe-coding-kickstart-community
+```
+
+Start a new session and ask: **Use $vibe-coding-kickstart to interview me about my project.**
+
+This is a GitHub-backed community marketplace. See [Codex installation and directory publishing](CODEX-PUBLISHING.md) for details and official documentation. No MCP server or external service is required.
 
 ### Claude
 
@@ -93,16 +104,17 @@ This renamed Claude package has been checked for valid frontmatter, complete ref
 
 To help validate it, run the [live acceptance suite](skills/vibe-coding-kickstart/references/evaluation.md) and share an issue with your project phase, a sanitized prompt, the response, and what you expected. Do not include credentials or private customer data.
 
-## Update the skill
+## Update the skill and plugin
 
 The source lives in `skills/vibe-coding-kickstart/`. After editing it, rebuild and check the installation package from the repository root:
 
 ```text
-python tools/build_skill.py
+python tools/build_plugin.py
+python tools/test_plugin.py
 ```
 
-The script uses only Python's standard library. It creates the skill ZIP, records its SHA-256 checksum, verifies archive contents against source, and checks local documentation links. Python is needed for maintaining the package, not for using the installed skill.
+The build uses only Python's standard library. It creates both ZIPs, the marketplace snapshot, and SHA-256 checksums. The tests check metadata, content parity, archive integrity, and paths. The original `tools/build_skill.py` also remains available for a Claude-only rebuild. Python is needed for maintaining the package, not for using the installed skill.
 
 Use the **Review -> Test -> Compare -> Fix -> Re-Test** workflow in the evaluation reference. Retain actual outputs and document unresolved blockers.
 
-This is a community-created skill, not an official Anthropic product.
+This is a community-created workflow, not an official Anthropic or OpenAI product. GitHub publication does not list it automatically in OpenAI's plugin directory.

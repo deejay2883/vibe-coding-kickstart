@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "vibe-coding-kickstart",
+  "version": "1.0.0",
+  "description": "Phase-aware business and technical interviews that turn an idea or existing project into a testable next step.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Vibe Coding Kickstart",
+        "shortDescription": "Plan your next coding step",
+        "defaultPrompt": [
+          "Help me turn my app idea into a small, testable MVP.",
+          "Interview me about the next build step in my existing project.",
+          "Help me plan regression testing after a change."
+        ],
+        "longDescription": "Guided business and technical interviews for people starting or advancing a software project. Adapt to discovery, MVP, initial build, feature changes, regression testing, release, or maintenance. Produce a bounded handoff with acceptance criteria, assumptions, and evidence status. Includes Quick and Deep dive modes. Does not itself execute builds, run tests, or approve releases.",
+        "category": "Productivity",
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg",
+        "developerName": "deejay2883",
+        "websiteURL": "https://github.com/deejay2883/vibe-coding-kickstart",
+        "supportURL": "https://github.com/deejay2883/vibe-coding-kickstart/issues",
+        "capabilities": []
+      },
+      "onboardingSkill": "./skills/vibe-coding-kickstart/SKILL.md"
+    }
+  },
+  "author": {
+    "name": "deejay2883",
+    "url": "https://github.com/deejay2883"
+  },
+  "homepage": "https://github.com/deejay2883/vibe-coding-kickstart",
+  "repository": "https://github.com/deejay2883/vibe-coding-kickstart"
+}

@@ -1,4 +1,4 @@
-﻿"""Build and validate the Claude installation ZIP. Standard library only."""
+"""Build and validate the Claude installation ZIP. Standard library only."""
 from pathlib import Path, PurePosixPath
 import hashlib
 import json
@@ -13,7 +13,7 @@ ARCHIVE = DIST / (NAME + '-claude.zip')
 
 
 def main():
-    files = sorted(p for p in SKILL.rglob('*') if p.is_file())
+    files = sorted(p for p in SKILL.rglob('*') if p.is_file() and 'agents' not in p.relative_to(SKILL).parts)
     if not (SKILL / 'SKILL.md').is_file():
         raise ValueError('Missing skill entrypoint')
     for doc in [ROOT / 'README.md', *SKILL.rglob('*.md')]:
@@ -47,7 +47,7 @@ def main():
             if '..' in PurePosixPath(name).parts or z.read(name) != content:
                 raise ValueError('Archive path or content mismatch')
     digest = hashlib.sha256(ARCHIVE.read_bytes()).hexdigest()
-    (DIST / 'sha256.json').write_text(json.dumps({ARCHIVE.name: digest}, indent=2) + '\n', encoding='utf-8')
+    (DIST / 'sha256.json').write_text(json.dumps({p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(DIST.glob('*.zip'))}, indent=2) + '\n', encoding='utf-8')
     print(f'Built and verified {ARCHIVE.name}: {len(expected)} source files')
     print(f'SHA256: {digest}')
     print('All local documentation links resolved. Native Claude behavior remains unverified.')
