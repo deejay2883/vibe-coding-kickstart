@@ -4,7 +4,7 @@
 
 An adaptive interview skill for **Claude and Codex**. Clarify your idea, choose a useful MVP, and turn business and technical decisions into an actionable build or testing handoff.
 
-[Download for Claude](https://github.com/deejay2883/vibe-coding-kickstart/releases/download/v1.0.0/vibe-coding-kickstart-claude.zip) | [Download Codex plugin](https://github.com/deejay2883/vibe-coding-kickstart/releases/download/v1.0.0/vibe-coding-kickstart-codex-plugin.zip) | [Quick install](#install) | [See an example](examples/booking-app.md) | [Give feedback](https://github.com/deejay2883/vibe-coding-kickstart/issues/new?template=feedback.yml)
+[Download for Claude](https://github.com/deejay2883/vibe-coding-kickstart/releases/download/v1.1.0/vibe-coding-kickstart-claude.zip) | [Download Codex plugin](https://github.com/deejay2883/vibe-coding-kickstart/releases/download/v1.1.0/vibe-coding-kickstart-codex-plugin.zip) | [Quick install](#install) | [See an example](examples/booking-app.md) | [Give feedback](https://github.com/deejay2883/vibe-coding-kickstart/issues/new?template=feedback.yml)
 
 ![Vibe Coding Kickstart: describe your idea, answer focused questions, get a practical handoff](docs/images/social-preview.png)
 
@@ -17,6 +17,16 @@ The skill helps clarify who the product is for, what the first useful version sh
 It also works on existing projects:
 
 > We changed user permissions. Interview me about regression testing and prepare a test plan.
+
+## Review an app you have already built
+
+> Review my current app. Inspect the available code and UI first, ask only essential questions about ambiguity and scale, then generate a comprehensive checklist and report.
+
+The post-build mode reviews business rules, functionality, UX/accessibility, architecture, data, access controls, integrations, performance, reliability, testing, operations, cost, and AI behavior where relevant. It adapts the checklist to your app and records evidence and gaps for every area.
+
+The report includes an executive assessment, app/scale profile, coverage summary, detailed checklist, prioritized findings, remediation actions, and a re-test plan. Code-inspection findings, executed checks, user-reported information, and unavailable evidence stay distinct. Review requests do not automatically change the app.
+
+[See the illustrative post-build report](examples/post-build-review.md) or [read the review workflow](skills/vibe-coding-kickstart/references/app-review.md). App access is needed for an actual inspection; otherwise the report is explicitly preliminary.
 
 ## See what you get
 
@@ -110,6 +120,10 @@ The skill follows the current workstream rather than forcing every project throu
 - Blockers and the next concrete action.
 
 This is an interview and planning workflow. It does not itself run tests, deploy software, or establish release readiness. Planned checks are never presented as passed tests.
+
+## Version 1.1.0
+
+Adds post-build app inspection, ambiguity/scale questions, and a comprehensive checklist/report workflow for both Claude and Codex. The original interview modes remain available. New-mode tabletop review results and remaining verification gates are recorded in [the review notes](evaluation/post-build-review.md).
 
 ## Validation status
 

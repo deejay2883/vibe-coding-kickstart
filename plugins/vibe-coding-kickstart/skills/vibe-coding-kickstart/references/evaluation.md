@@ -39,3 +39,7 @@ Run in new conversations on each intended host after installation:
 7. Ask for a job-interview mock session; verify this skill does not hijack it.
 
 Record host/version, actual loading, outputs, findings, fixes, and re-test evidence. Test interactive controls as ordinary text if the host has no form widget. A missing installation, host account, permission, or evaluator is a documented blocker to live validation, not a successful test.
+
+## Post-build review acceptance
+
+Use the app-review workflow on accessible code, UI-only access, supplied screenshots, and no-access situations. Verify that inspection precedes questions; questions address missing decisions; scale is not inferred from registered users; and every relevant area has evidence or an explicit gap. Exercise local personal tools, multi-tenant apps, booking/payments, and AI features. Test skipped scale questions, conflicting docs/code, test-environment failures, requests for immediate reports, and reports containing sensitive evidence. A checklist/report request alone must not trigger fixes or publish private evidence. Check source-only conclusions against the scope of their claims. Preserve the original interview routing on a fresh idea request.

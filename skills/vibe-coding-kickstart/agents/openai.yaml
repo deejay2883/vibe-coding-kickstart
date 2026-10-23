@@ -1,4 +1,4 @@
 interface:
   display_name: "Vibe Coding Kickstart"
-  short_description: "Turn project answers into a practical build plan"
+  short_description: "Plan builds and review apps with evidence"
   default_prompt: "Use $vibe-coding-kickstart to interview me about my project and prepare the next build or testing step."

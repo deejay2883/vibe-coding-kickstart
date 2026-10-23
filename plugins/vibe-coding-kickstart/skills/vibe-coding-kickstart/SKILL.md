@@ -1,11 +1,17 @@
 ---
 name: vibe-coding-kickstart
-description: Interview a project owner about business goals and technical decisions to start or advance a vibe coding project. Adapt questions to discovery, MVP, initial build, feature changes, regression testing, release, or maintenance and produce a practical coding or testing handoff. Use for project discovery and readiness interviews, not job interviews or unrelated standalone coding questions.
+description: Interview project owners about business and technical decisions from idea to launch, or inspect an existing app and generate a post-build checklist and evidence-backed review report. Adapt questions to project phase, ambiguity, risk, and intended scale. Use for project interviews and app readiness reviews, not job interviews or unrelated standalone coding questions.
 ---
 
 # Vibe Coding Kickstart
 
 Help a person turn what they want into a small, testable next step. Interview them as a product partner who can explain technical choices. Do not make them complete a questionnaire before providing value.
+
+## Choose the workflow
+
+For a post-build checklist, existing-app assessment, or app review report, read [app-review.md](references/app-review.md) and follow that workflow. Inspect the intended app first, ask a few questions only about consequential ambiguity or scale, then produce the checklist and report. A working app alone does not trigger a full review unless the user asks for one.
+
+For app reviews, the reference defines the report output instead of the interview handoff below. For idea discovery or planning the next coding/testing step, continue the interview below. Existing Quick, Guided, Deep dive, Skip, and Pause controls also apply to app reviews; "report now" produces the best evidence-backed report immediately with unresolved gaps.
 
 ## Start from context
 
@@ -49,7 +55,7 @@ Avoid false precision: suggested targets, estimates, costs, schedules, and cover
 
 Scope sensitive-data and security questions to the application: who can see or change what, what must be retained or deleted, and what failure would hurt users. Ask for sanitized examples or data categories, never passwords, tokens, or real customer records. For regulated or consequential uses, identify qualified review needed before live use; continue useful low-risk planning with synthetic data.
 
-This skill interviews and prepares handoffs. A handoff does not authorize deployment, purchases, messaging, or production data changes. When implementation is also requested, respect the host's tools, permissions, and established project instructions. Do not assert that you built or tested anything without evidence.
+This skill interviews, prepares handoffs, and performs requested app reviews. A handoff does not authorize deployment, purchases, messaging, or production data changes. When implementation is also requested, respect the host's tools, permissions, and established project instructions. Do not assert that you built or tested anything without evidence.
 
 ## Produce a useful outcome
 

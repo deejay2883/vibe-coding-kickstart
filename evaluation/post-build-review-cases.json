@@ -1,0 +1,62 @@
+{
+  "seed": 20261023,
+  "method": "Input generation only; no model execution. Primary-assistant tabletop review recorded separately.",
+  "cases": [
+    {
+      "id": "R01",
+      "app": "public booking app",
+      "access": "code and safe test environment",
+      "scale": "unknown",
+      "control": "report now"
+    },
+    {
+      "id": "R02",
+      "app": "two-team shared notes app",
+      "access": "code and safe test environment",
+      "scale": "unknown",
+      "control": "skip scale"
+    },
+    {
+      "id": "R03",
+      "app": "private offline recipe tool",
+      "access": "no app access",
+      "scale": "unknown",
+      "control": "report now"
+    },
+    {
+      "id": "R04",
+      "app": "public booking app",
+      "access": "code and safe test environment",
+      "scale": "target 100 concurrent users; no measurements",
+      "control": "report now"
+    },
+    {
+      "id": "R05",
+      "app": "public booking app",
+      "access": "source only",
+      "scale": "target 100 concurrent users; no measurements",
+      "control": "skip scale"
+    },
+    {
+      "id": "R06",
+      "app": "private offline recipe tool",
+      "access": "UI only",
+      "scale": "private pilot",
+      "control": "skip scale"
+    },
+    {
+      "id": "R07",
+      "app": "two-team shared notes app",
+      "access": "code and safe test environment",
+      "scale": "target 100 concurrent users; no measurements",
+      "control": "Guided"
+    },
+    {
+      "id": "R08",
+      "app": "public booking app",
+      "access": "UI only",
+      "scale": "target 100 concurrent users; no measurements",
+      "control": "skip scale"
+    }
+  ]
+}

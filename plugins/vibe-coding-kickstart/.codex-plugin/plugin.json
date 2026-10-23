@@ -1,7 +1,7 @@
 {
   "name": "vibe-coding-kickstart",
-  "version": "1.0.0",
-  "description": "Phase-aware business and technical interviews that turn an idea or existing project into a testable next step.",
+  "version": "1.1.0",
+  "description": "Business and technical interviews plus post-build app reviews, comprehensive checklists, and evidence-backed reports.",
   "author": {
     "name": "deejay2883",
     "url": "https://github.com/deejay2883"
@@ -11,13 +11,13 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Vibe Coding Kickstart",
-    "shortDescription": "Plan your next coding step",
+    "shortDescription": "Plan, review, and improve apps",
     "defaultPrompt": [
       "Help me turn my app idea into a small, testable MVP.",
       "Interview me about the next build step in my existing project.",
-      "Help me plan regression testing after a change."
+      "Review my existing app, clarify ambiguity and intended scale, and produce a checklist and report."
     ],
-    "longDescription": "Guided business and technical interviews for people starting or advancing a software project. Adapt to discovery, MVP, initial build, feature changes, regression testing, release, or maintenance. Produce a bounded handoff with acceptance criteria, assumptions, and evidence status. Includes Quick and Deep dive modes. Does not itself execute builds, run tests, or approve releases.",
+    "longDescription": "Interview project owners from idea to release, or inspect an existing app and generate an evidence-backed checklist and review report. Ask focused questions about ambiguity, risk, and intended scale. Cover product behavior, UX, data, access, integrations, testing, performance, operations, and relevant AI risks. Distinguish inspected evidence, executed checks, and unverified claims. Requires access to the app or relevant artifacts for an actual inspection.",
     "category": "Productivity",
     "logo": "./assets/icon.svg",
     "composerIcon": "./assets/icon.svg",
