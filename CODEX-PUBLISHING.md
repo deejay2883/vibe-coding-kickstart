@@ -1,4 +1,4 @@
-﻿# Publish and install the Codex plugin
+# Publish and install the Codex plugin
 
 This repository distributes **Vibe Coding Kickstart** through a community marketplace. It does not imply an OpenAI directory listing or endorsement.
 
@@ -42,3 +42,7 @@ The package uses the GitHub publisher name `deejay2883`; ensure it matches your 
 ## Validation boundary
 
 Package checks verify paths, metadata, generated-source parity, ZIP integrity, and Claude compatibility. Native discovery/installation results are separate from interview quality. Real multi-turn Codex behavior and OpenAI portal acceptance must be verified on their respective hosts.
+
+## Recorded installation check
+
+On 23 October 2026, Codex CLI `0.162.0-alpha.17.2` successfully registered this GitHub marketplace and installed plugin version `1.0.0`. The subsequent plugin listing reported both `installed: true` and `enabled: true`. The public ZIP download matched the locally validated archive byte-for-byte. All 11 distribution checks and the skill frontmatter validator passed. These results verify packaging, discovery, and installation; real interview behavior and OpenAI directory acceptance remain unverified.

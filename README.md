@@ -102,6 +102,8 @@ The original workflow received 30 primary-assistant tabletop scenarios and itera
 
 This renamed Claude package has been checked for valid frontmatter, complete references, and source-to-ZIP consistency. Native Claude installation, automatic triggering, and live conversational behavior remain unverified.
 
+The Codex plugin passed 11 distribution checks and was installed successfully from the GitHub marketplace using Codex CLI `0.162.0-alpha.17.2`. It was reported as installed and enabled at version `1.0.0`. Real multi-turn Codex behavior and OpenAI directory acceptance remain unverified. See the [recorded installation check](CODEX-PUBLISHING.md#recorded-installation-check).
+
 To help validate it, run the [live acceptance suite](skills/vibe-coding-kickstart/references/evaluation.md) and share an issue with your project phase, a sanitized prompt, the response, and what you expected. Do not include credentials or private customer data.
 
 ## Update the skill and plugin
