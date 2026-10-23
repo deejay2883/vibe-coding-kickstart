@@ -1,0 +1,24 @@
+name: Installation problem
+description: Report a problem downloading, installing, or finding the skill.
+title: "[Install]: "
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: Host and version
+      placeholder: "For example: Codex CLI version, Claude Code version, or Claude web"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What steps did you follow?
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened, and what did you expect?
+      description: Include sanitized error text; omit tokens, credentials, and private file paths.
+    validations:
+      required: true

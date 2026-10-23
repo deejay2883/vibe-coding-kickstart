@@ -2,9 +2,11 @@
 
 **From idea to build-ready, one question at a time.**
 
-A reusable workflow for Claude and Codex that asks adaptive business and technical questions, from idea and MVP to build, regression testing, and release, then creates an actionable handoff.
+An adaptive interview skill for **Claude and Codex**. Clarify your idea, choose a useful MVP, and turn business and technical decisions into an actionable build or testing handoff.
 
-[Download the Claude skill ZIP](https://github.com/deejay2883/vibe-coding-kickstart/raw/refs/heads/main/dist/vibe-coding-kickstart-claude.zip) ? [Download the Codex plugin ZIP](https://github.com/deejay2883/vibe-coding-kickstart/raw/refs/heads/main/dist/vibe-coding-kickstart-codex-plugin.zip) ? [Read the skill](skills/vibe-coding-kickstart/SKILL.md) ? [Report feedback](https://github.com/deejay2883/vibe-coding-kickstart/issues)
+[Download for Claude](https://github.com/deejay2883/vibe-coding-kickstart/releases/download/v1.0.0/vibe-coding-kickstart-claude.zip) | [Download Codex plugin](https://github.com/deejay2883/vibe-coding-kickstart/releases/download/v1.0.0/vibe-coding-kickstart-codex-plugin.zip) | [Quick install](#install) | [See an example](examples/booking-app.md) | [Give feedback](https://github.com/deejay2883/vibe-coding-kickstart/issues/new?template=feedback.yml)
+
+![Vibe Coding Kickstart: describe your idea, answer focused questions, get a practical handoff](docs/images/social-preview.png)
 
 ## Start with your idea
 
@@ -15,6 +17,19 @@ The skill helps clarify who the product is for, what the first useful version sh
 It also works on existing projects:
 
 > We changed user permissions. Interview me about regression testing and prepare a test plan.
+
+## See what you get
+
+An illustrative example; actual responses depend on your host and project context.
+
+| You bring | The interview explores | You leave with |
+| --- | --- | --- |
+| "I want to build a booking app." | First customer journey, pilot audience, data and access decisions | A bounded MVP with acceptance criteria and open decisions |
+| "We changed user permissions." | Changed roles, intended baseline, and critical existing flows | A risk-ranked regression plan with expected results |
+
+[Read the short booking-app example](examples/booking-app.md), then try the skill with your own project.
+
+**Found it useful? Star this repository to find it again and help others discover it.** Share the question that helped, or the part that got confusing, through the [feedback form](https://github.com/deejay2883/vibe-coding-kickstart/issues/new?template=feedback.yml).
 
 ## Install
 
@@ -105,6 +120,12 @@ This renamed Claude package has been checked for valid frontmatter, complete ref
 The Codex plugin passed 11 distribution checks and was installed successfully from the GitHub marketplace using Codex CLI `0.162.0-alpha.17.2`. It was reported as installed and enabled at version `1.0.0`. Real multi-turn Codex behavior and OpenAI directory acceptance remain unverified. See the [recorded installation check](CODEX-PUBLISHING.md#recorded-installation-check).
 
 To help validate it, run the [live acceptance suite](skills/vibe-coding-kickstart/references/evaluation.md) and share an issue with your project phase, a sanitized prompt, the response, and what you expected. Do not include credentials or private customer data.
+
+## Help improve the interview
+
+Try one real project and tell us your host, phase, and what helped or got in your way. [Share interview feedback](https://github.com/deejay2883/vibe-coding-kickstart/issues/new?template=feedback.yml) or [report an installation problem](https://github.com/deejay2883/vibe-coding-kickstart/issues/new?template=installation.yml).
+
+The most useful contributions are reproducible examples, clearer questions, and corrections backed by actual use. Follow the existing Review -> Test -> Compare -> Fix -> Re-Test process, and keep proposed behavior separate from observed results.
 
 ## Update the skill and plugin
 

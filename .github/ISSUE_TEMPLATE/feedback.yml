@@ -1,0 +1,44 @@
+name: Interview feedback
+description: Tell us what helped and which question or handoff needs improvement.
+title: "[Feedback]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Try one project interview, then share what worked. Use sanitized examples; omit credentials and private customer information."
+  - type: dropdown
+    id: host
+    attributes:
+      label: Where did you use it?
+      options:
+        - Claude
+        - Claude Code
+        - Codex
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Project phase
+      options:
+        - Discovery
+        - MVP
+        - Initial build
+        - Feature change
+        - Regression testing
+        - Release
+        - Maintenance or growth
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: helped
+    attributes:
+      label: What helped you move forward?
+  - type: textarea
+    id: improve
+    attributes:
+      label: What was confusing or missing?
+      description: A sanitized prompt, response, and expected improvement are useful.
+    validations:
+      required: true
